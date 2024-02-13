@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./script.js" defer></script>
+    <link href="./style.css" rel="stylesheet">
+    <title>ToDo</title>
+    
+</head>
+<body>
+    <div id="container">
+        <section>
+            <form action="#none" id="form">
+                <span></span>
+                <input type="text" id="task-input" placeholder="알차게 한번 살아보세" required maxlength="100" />
+                <button type="button" id="task-button">Todo</button>
+            </form>
+
+            <div id="todo">
+                <div id="tabs">
+                    <div id="all">
+                        모두
+                    </div>
+
+                    <div id="ongoing">
+                        진행중
+                    </div>
+
+                    <div id="done">
+                        완료
+                    </div>
+                </div>
+
+
+                <div id="todoBox">
+
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
