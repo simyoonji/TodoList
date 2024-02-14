@@ -12,7 +12,7 @@ body {
 #container {
     width: 100%;
     min-height: 50rem;
-    background: url("./img/바다.png")center center no-repeat;
+    background: url("./바다.png")center center no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
@@ -38,7 +38,7 @@ form > span {
     position: absolute;
     width: 4rem;
     height: 4rem;
-    background: url("./img/cherry.png") no-repeat;
+    background: url("./cherry.png") no-repeat;
     background-size: cover;
     cursor: pointer;
 }
