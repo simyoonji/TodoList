@@ -3,41 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js" defer></script>
-    <link href="style.css" rel="stylesheet">
-    <title>ToDo</title>
+    <script src="./script/script.js" defer></script>
+    <link href="./css/style.css" rel="stylesheet">
+    <title>ToDoList</title>
     
 </head>
 <body>
     <div id="container">
-        <section>
-            <form action="#none" id="form">
-                <span></span>
-                <input type="text" id="task-input" placeholder="J의 삶을 살자!" required maxlength="100" />
-                <button type="button" id="task-button">Todo</button>
-            </form>
+        <header>
+            <!-- 입력창 -->
+            <div>
+                <form action="#">
+                    <input type="text" required />
+                    <button>plus</button>
+                </form>
+            </div>
 
-            <div id="todo">
-                <div id="tabs">
-                    <div id="all">
-                        모두
+            <!-- tabs -->
+            <div id="tabsArea">
+                <div class="tabs">
+                    <span id="underLine"></span>
+
+                    <div id="all" class="selected">
+                        all
                     </div>
 
                     <div id="ongoing">
-                        진행중
+                        ongoing
                     </div>
 
                     <div id="done">
-                        완료
+                        completed
                     </div>
                 </div>
-
-
-                <div id="todoBox">
-
-                </div>
             </div>
-        </section>
+
+            <span class="sticker bear">
+
+                <span class="sticker balloon">
+                    <h2>TODO!</h2>
+                </span>
+            </span>
+            
+            <span class="sticker emoji">
+            </span>
+     </header>
+
+     <!-- task -->
+     <div class="task">
+        
+       
+     </div>
     </div>
 </body>
 </html>
