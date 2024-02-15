@@ -32,6 +32,7 @@ button {
     border: 1px solid lightblue;
     border-radius: 10px;
     box-shadow: 0 0 1rem 0 #c1c1c1;
+    transition: all .5s ease;
 }
 #container > header {
     width: 100%;
@@ -49,6 +50,7 @@ button {
     box-sizing: border-box;
     border: none;
     outline: none;
+    transition: all .5s ease;
 }
 #container form > button {
     margin-left: 1rem;
@@ -152,6 +154,7 @@ button {
     text-transform: uppercase;
     color: rgb(110, 165, 186);
     font-size: 1.4rem;
+    transition: all .5s ease;
 }
 
 /* task */
@@ -178,4 +181,53 @@ button:hover {
     box-shadow: 0 0 .5rem 0 rgb(156, 208, 227);
     background-color: #f8f6ff;
     color: rgb(156, 208, 227);
+}
+
+
+@media screen and (max-width:1016px){
+    #container {
+        max-width: 100%;
+    }
+}
+    
+/*520px*/
+@media screen and (max-width:561px){
+    #container form > input {
+        width: 33%;
+    }
+    .balloon {
+        display: none;
+    }
+    .tabs > div {
+        padding: 1rem 1.5rem;
+    }
+    #underLine {
+        width: 5.26rem;
+    }
+    .task button {
+        padding: 1rem 1rem;
+    }
+}
+@media screen and (max-width:401px){
+    #container form > input {
+        width: 45%;
+    }
+    .tabs > div {
+        padding: 1rem 1rem;
+        font-size: 1.2rem;
+    }
+    #underLine {
+        width: 3.9rem;
+    }
+    button {
+        padding: 1rem 1rem;
+    }
+    .task > div > span {
+        font-size: 1.2rem;
+        font-weight: normal;
+    }
+    .task button {
+        padding: 1rem 0.3rem;
+    }
+
 }
